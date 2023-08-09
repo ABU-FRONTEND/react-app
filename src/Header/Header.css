@@ -1,0 +1,38 @@
+header{
+   width: 100%;
+   background: #2B3844;
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+.header_content{
+   user-select: none;
+   display: flex;
+   justify-content: space-between;
+   padding: 24px 0;
+}
+.logo{
+   font-weight: 800;
+   font-size: 24px;
+}
+.dark_mode, .light_mode{
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+.light_mode{
+   display: none;
+}
+svg{
+   line-height: 0;
+}
+@media only screen and (max-width: 650px){
+   .header_content{
+      padding: 30px 0;
+   }
+   .logo{
+      font-size: 14px;
+   }
+   .dark_mode{
+      font-size: 12px;
+   }
+}
